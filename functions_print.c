@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * p_char - prints character c
- * @arg: character to print
- * Return: number of characters printed
+ * p_char - prints char
+ * @list: character to print
+ * Return: number of characters
  */
 // Print char 
 int p_char(va_list list)
@@ -15,9 +15,9 @@ int p_char(va_list list)
 	return (1);
 }
 /**
- * p_str - prints string s
- * @arg: string to print
- * Return: number of characters printed
+ * p_str - prints string
+ * @list: string to print
+ * Return: number of characters 
  */
 // print string
 int p_str(va_list list)
