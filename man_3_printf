@@ -1,0 +1,30 @@
+.\" Manpage for _printf.
+.TH man "20 jul 2020" "1.0" "printf man page"
+.SH NAME
+_printf
+.SH SYNOPSIS
+#include "holberton.h"
+_printf
+.SH DESCRIPTION
+_printf is a function that emulates the function printf, according to that,
+this function prints arguments in a given format when invoking the function,
+i. e, this function sends formatted output to stdout. On success, it returns the total
+number of characters written.
+
+The parameters work as shows below, first we have to give the
+mandatory format parameter, which can be some of the ones that are shown below:
+"%c": characters.
+"%s": strings.
+"%d": decimal integers.
+"%i": integers.
+The % works as an identifier which is necessary to precede the variable type
+to print. If no identifier is given, the function prints the character given.
+The rest of parameters are the varianble ones, from one to infinite (...).
+.SH OPTIONS
+***
+.SH SEE ALSO
+printf
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Sebastian Valencia - Takeshi Ramirez
