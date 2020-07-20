@@ -5,8 +5,8 @@
 #include <stdlib.h>
 /**
  * struct print - struct
- * @print: struct print
- * @p: print function
+ * @print: identificador
+ * @p: pointer to function
  */
 typedef struct print
 {
