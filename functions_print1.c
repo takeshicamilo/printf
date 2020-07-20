@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * p_dec - prints decimal
- * @arg: argument to print
- * Return: number of characters printed
+ * p_dec - prints 
+ * @list: argument
+ * Return: number of characters 
  */
 // print decimales
 int p_dec(va_list list)
@@ -46,7 +46,7 @@ int p_dec(va_list list)
 }
 /**
  * p_int - prints integer
- * @arg: argument to print
+ * @list: argument
  * Return: number of characters printed
  */
 // print entero
