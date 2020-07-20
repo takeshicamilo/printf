@@ -1,6 +1,6 @@
 <p align="center">
 <img src="logo.png"
-height="450" width="750"/>
+height="400" width="750"/>
 </p>
 
 # printf
