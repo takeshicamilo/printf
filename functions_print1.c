@@ -10,32 +10,40 @@ int p_dec(va_list list)
 
 	n = n / 10;
 	num = n;
-	if (last < 0)
+
+	while (num / 10 != 0)
+	{
+		exp = exp * 10;
+		num = num / 10;
+	}
+	num = n;
+
+	if (num < 0)
 	{
 		_putchar('-');
-		num = -num;
-		n = -n;
-		last = -last;
-		i++;
-	}
-	if (num > 0)
-	{
-		while (num / 10 != 0)
+		while (exp != 0)
 		{
-			exp = exp * 10;
-			num = num / 10;
+			dig = num / (-exp);
+			_putchar(dig + '0');
+			num = num % exp;
+			exp = exp / 10;
+			i++;
 		}
-		num = n;
+		_putchar(-last + '0');
+	}
+	else
+	{
 		while (exp > 0)
 		{
 			dig = num / exp;
 			_putchar(dig + '0');
-			num = num - (dig * exp);
+			num = num % exp;
 			exp = exp / 10;
 			i++;
 		}
+		_putchar(last + '0');
 	}
-	_putchar(last + '0');
+
 	return (i);
 }
 /**
@@ -45,40 +53,43 @@ int p_dec(va_list list)
  */
 int p_int(va_list list)
 {
-	int n = va_arg(list, int);
-	int num;
-	int last = n % 10;
-	int dig;
-	int exp = 1;
-	int i = 1;
+		int n = va_arg(list, int), num, last = n % 10, dig, exp = 1, i = 1;
 
 	n = n / 10;
 	num = n;
-	if (last < 0)
+
+	while (num / 10 != 0)
+	{
+		exp = exp * 10;
+		num = num / 10;
+	}
+	num = n;
+
+	if (num < 0)
 	{
 		_putchar('-');
-		num = -num;
-		n = -n;
-		last = -last;
-		i++;
-	}
-	if (num > 0)
-	{
-		while (num / 10 != 0)
+		while (exp != 0)
 		{
-			exp = exp * 10;
-			num = num / 10;
+			dig = num / (-exp);
+			_putchar(dig + '0');
+			num = num % exp;
+			exp = exp / 10;
+			i++;
 		}
-		num = n;
+		_putchar(-last + '0');
+	}
+	else
+	{
 		while (exp > 0)
 		{
 			dig = num / exp;
 			_putchar(dig + '0');
-			num = num - (dig * exp);
+			num = num % exp;
 			exp = exp / 10;
 			i++;
 		}
+		_putchar(last + '0');
 	}
-	_putchar(last + '0');
+
 	return (i);
 }
