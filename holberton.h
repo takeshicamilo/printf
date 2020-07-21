@@ -21,5 +21,7 @@ int p_str(va_list list);
 int p_dec(va_list list);
 int p_int(va_list list);
 
+int p_bin(va_list list);
+
 int _putchar(char c);
 #endif
