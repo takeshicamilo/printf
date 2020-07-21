@@ -53,7 +53,7 @@ int p_dec(va_list list)
  */
 int p_int(va_list list)
 {
-		int n = va_arg(list, int), num, last = n % 10, dig, exp = 1, i = 1;
+	int n = va_arg(list, int), num, last = n % 10, dig, exp = 1, i = 1;
 
 	n = n / 10;
 	num = n;
