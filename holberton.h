@@ -6,7 +6,7 @@
 /**
  * struct print - struct
  * @print: identificador
- * @p: pointer to function
+ * @f: function pointer.
  */
 typedef struct print
 {
