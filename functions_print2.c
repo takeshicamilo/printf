@@ -6,10 +6,10 @@
  */
 int p_bin(va_list list)
 {
-	unsigned long long int binarynum = 0;
-	unsigned long long int i = 1, rem;
-	unsigned long long int temp = 1;
-	unsigned long long int decimalnum = va_arg(list, unsigned long long int);
+	unsigned int binarynum = 0;
+	unsigned int i = 1, rem;
+	unsigned int temp = 1;
+	unsigned int decimalnum = va_arg(list, unsigned int);
 
 	while (decimalnum != 0)
 	{
