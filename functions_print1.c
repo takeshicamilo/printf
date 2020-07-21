@@ -1,10 +1,9 @@
 #include "holberton.h"
 /**
- * p_dec - prints 
+ * p_dec - prints
  * @list: argument
- * Return: number of characters 
+ * Return: number of characters
  */
-// print decimales
 int p_dec(va_list list)
 {
 	int n = va_arg(list, int);
@@ -49,10 +48,9 @@ int p_dec(va_list list)
  * @list: argument
  * Return: number of characters printed
  */
-// print entero
 int p_int(va_list list)
 {
-	int n = va_arg(list , int);
+	int n = va_arg(list, int);
 	int num;
 	int last = n % 10;
 	int dig;
