@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
- * p_int - prints integer
+ * p_dec - prints
  * @list: argument
- * Return: number of characters printed
+ * Return: number of characters
  */
-int p_int(va_list list)
+int p_dec(va_list list)
 {
 	int n = va_arg(list, int), num, last = n % 10, dig, exp = 1, i = 1;
 
@@ -46,13 +46,12 @@ int p_int(va_list list)
 
 	return (i);
 }
-
 /**
- * p_dec - prints
+ * p_int - prints integer
  * @list: argument
- * Return: number of characters
+ * Return: number of characters printed
  */
-int p_dec(va_list list)
+int p_int(va_list list)
 {
 
 	int n = va_arg(list, int);
