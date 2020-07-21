@@ -14,7 +14,7 @@ int p_bin(va_list list)
 	{
 		rem = decimalnum % 2;
 		decimalnum = decimalnum / 2;
-		binarynum = binarynum + rem*temp;
+		binarynum = binarynum + rem * temp;
 		temp = temp * 10;
 	}
 	i = print_number(binarynum);

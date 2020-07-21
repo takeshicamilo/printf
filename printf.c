@@ -9,9 +9,8 @@ int _printf(const char *format, ...)
 	va_list list;
 	unsigned int i = 0, j = 0, check = 0, length = 0, l;
 
-	print_t print[] = {
-		{"c", p_char}, {"s", p_str}, {"d", p_dec}, {"i", p_int}, {NULL, NULL}
-	};
+	print_t print[] = {{"c", p_char}, {"s", p_str}, {"d", p_dec},
+		{"i", p_int}, {"b", p_bin}, {NULL, NULL}};
 	va_start(list, format);
 	while (format != NULL && format[i] != '\0')
 	{
