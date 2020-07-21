@@ -8,7 +8,7 @@ int p_bin(va_list list)
 {
 	unsigned long long int binarynum = 0;
 	unsigned long long int i = 1, rem;
-	long long int temp = 1;
+	unsigned long long int temp = 1;
 	unsigned int decimalnum = va_arg(list, unsigned int);
 
 	while (decimalnum != 0)
