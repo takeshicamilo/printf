@@ -5,7 +5,6 @@
  * @list: character to print
  * Return: number of characters
  */
-// Print char 
 int p_char(va_list list)
 {
 	char c;
@@ -17,9 +16,8 @@ int p_char(va_list list)
 /**
  * p_str - prints string
  * @list: string to print
- * Return: number of characters 
+ * Return: number of characters
  */
-// print string
 int p_str(va_list list)
 {
 	unsigned int i = 0;
