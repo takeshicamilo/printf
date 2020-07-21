@@ -6,8 +6,8 @@
  */
 int p_bin(va_list list)
 {
-	unsigned int binarynum = 0;
-	unsigned int i = 1, rem;
+	unsigned long long int binarynum = 0;
+	unsigned long long int i = 1, rem;
 	long long int temp = 1;
 	unsigned int decimalnum = va_arg(list, unsigned int);
 
@@ -18,6 +18,7 @@ int p_bin(va_list list)
 		binarynum = binarynum + rem * temp;
 		temp = temp * 10;
 	}
+	temp = temp / 10;
 	while (temp >= 1)
 	{
 		_putchar((binarynum / temp) + '0');
